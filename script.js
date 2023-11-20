@@ -16,7 +16,7 @@ function addLesson() {
     lessonItem.dataset.type = type;
     lessonItem.innerHTML = `
         <span>${day} - ${time} (${type === 'individual' ? 'Individual' : 'Grupo'})</span>
-        <button onclick="deleteLesson(this)">Cancelar</button>
+        <button onclick="deleteLesson(this)">X</button>
     `;
 
     lessonList.appendChild(lessonItem);
